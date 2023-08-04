@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Encuestas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Encuesta de Programación</h1>
+        <p id="description">
+        Me gustaría saber su opinión respecto a sus lenguajes de programación favoritos, el tiempo que llevan programando y su experiencia en el sector de la informática.
+        </p>
+        <form id="survey-form" action="">
+            <fieldset>
+            <label id="name-label" for="name">Nombre <input type="text" id="name" required placeholder="Cristhian Guerrero"></label>
+            <label id="email-label" for="email">Email <input type="email" id="email" required placeholder="xxxx@gmail.com"></label>
+            <label id="number-label" for="number"> Edad (opcional) <input type="number" id="number" min="13" max="100" placeholder="13-100"></label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">¿Cuál de estas opciones te describe mejor en el área de la programación?
+                    <select id="dropdown">
+                        <option value="">Selecciona una respuesta</option>
+                        <option value="1">Estoy empezando</option>
+                        <option value="2">Soy programador Junior</option>
+                        <option value="3">Soy programador Senior</option>
+                        <option value="4">Otro</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>¿Qué tan interesado estás por la programación?</label>
+                <label for="poco"><input class="inline" type="radio" name="interés" id="poco" value="poco interesado"> Poco interesado</label>
+                <label for="medio"><input class="inline" type="radio" name="interés" id="medio" value="interesado"> Interesado</label>
+                <label for="mucho"><input class="inline" type="radio" name="interés" id="mucho" value="muy interesado"> Muy interesado</label>
+                <label for="muchisimo"><input class="inline" type="radio" name="interés" id="muchisimo" value="soy senior y sigo estudiando"> Soy Senior y sigo estudiando!</label>
+            </fieldset>
+            <fieldset>
+                <label>¿Qué lenguajes de programación quisieras aprender?</label>
+                <label for="python"><input type="checkbox" name="lenguajes" class="input-checkbox" value="python" id="python"> Python</label>
+                <label for="java"><input type="checkbox" name="lenguajes" class="input-checkbox" value="java" id="java"> Java</label>
+                <label for="javascript"><input type="checkbox" name="input-checkbox" class="input-checkbox" value="javascript" id="javascript"> JavaScript</label>
+                <label for="c++"><input type="checkbox" name="input-checkbox" class="input-checkbox" value="c++" id="c++"> C++</label>
+                <label for="c#"><input type="checkbox" name="input-checkbox" class="input-checkbox" value="c#" id="c#"> C#</label>
+                <label for="ruby"><input type="checkbox" name="input-checkbox" class="input-checkbox" value="ruby" id="ruby"> Ruby</label>
+                <label for="go"><input type="checkbox" name="input-checkbox" class="input-checkbox" value="go" id="go"> Go</label>
+                <label for="php"><input type="checkbox" name="input-checkbox" class="input-checkbox" value="php" id="php"> PHP</label>
+                <label for="r"><input type="checkbox" name="input-checkbox" class="input-checkbox" value="r" id="r"> R</label>
+                <label for="matlab"><input type="checkbox" name="input-checkbox" class="input-checkbox" value="matlab" id="matlab"> MATLAB</label>
+                <label for="typescript"><input type="checkbox" name="input-checkbox" class="input-checkbox" value="typescript" id="typescript"> TypeScript</label>
+                <label for="sql"><input type="checkbox" name="input-checkbox" class="input-checkbox" value="sql" id="sql"> SQL</label>
+                <label for="experiencia">Cuentanos sobre cómo y por qué te interesa la programación.
+                    <textarea name="experiencia" id="experiencia" cols="30" rows="5" placeholder="Mi experiencia con el programación..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
