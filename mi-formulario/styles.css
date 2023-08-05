@@ -63,6 +63,7 @@ input[type="checkbox"]{
     /*background-color:rgba(40, 20, 108, 0.75);*/
     border: 1px solid rgb(168, 181, 239);
     /*color: rgb(254, 239, 255);*/
+    vertical-align: middle;
 }
 input[type="submit"]{
     display:block;
